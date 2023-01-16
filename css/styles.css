@@ -75,6 +75,10 @@ h4 {
 .header-link:hover {
   color: var(--primary-color);
 }
+.header-link:focus > svg,
+.header-link:hover > svg {
+  fill: var(--primary-color);
+}
 .header-black {
   font-style: normal;
   font-weight: 500;
@@ -262,6 +266,10 @@ h4 {
   border-radius: 50px;
   background-color: var(--primary-color);
 }
+.team-icon-border:hover > svg,
+.team-icon-border:focus > svg {
+  fill: var(--third-color);
+}
 .team-icon {
   display: flex;
   justify-content: center;
@@ -277,6 +285,7 @@ h4 {
 .list-icons:focus {
   fill: var(--third-color);
 }
+
 /* block-5 */
 
 .our-customers {
@@ -298,14 +307,13 @@ h4 {
 .icon-logo {
   fill: var(--secondary-color);
 }
-.icon-logo:hover,
-.icon-logo:focus {
-  fill: var(--primary-color);
-}
-
 .border-customers:hover,
 .border-customers:focus {
   border-color: var(--primary-color);
+}
+.border-customers:hover > svg,
+.border-customers:focus > svg {
+  fill: var(--primary-color);
 }
 .customs {
   display: flex;
